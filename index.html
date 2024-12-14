@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiled Links</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>MY ACTIVITY HUB</h1>
+            <div class="ribbon"></div>
+        </div>
+        <div class="act-grid">
+            <div class="act-box">
+                <a href="https://magenta-gaufre-58e0ee.netlify.app/">Activity 1</a>
+                <p class="description">HOMEPAGE</p>
+            </div>
+            <div class="act-box">
+                <a href="https://responsivehomepage2d.netlify.app/">Activity 2</a>
+                <p class="description">RESPONSIVE CSS</p>
+            </div>
+            <div class="act-box">
+                <a href="https://riverawebsite2d.netlify.app/">Activity 3</a>
+                <p class="description">INDIVIDUAL WEB PAGES.</p>
+            </div>
+            <div class="act-box">
+                <a href="https://caalculatoor.netlify.app/">Activity 4</a>
+                <p class="description">CALCULATOR UI DESIGN</p>
+            </div>
+            <div class="act-box">
+                <a href="https://functionalcalc2d.netlify.app/">Activity 5</a>
+                <p class="description">CALCULATOR FUNCTIONAL</p>
+            </div>
+            <div class="act-box">
+                <a href="https://functionallogin.netlify.app/">Activity 6</a>
+                <p class="description">LOG IN SIGN UP WITH JS</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+   <style>
+        body {
+            background: radial-gradient(circle, rgba(203,141,212,1) 0%, rgba(232,184,229,0.95) 100%);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            font-family: "Courier New", monospace;
+            font-size: 2.5em;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 20px;
+        }
+        
+        .ribbon {
+            width: 50%;
+            height: 100px;
+            background: url('ribbon.png') no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .act-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        
+        .act-box {
+            background-color: #FFFFFF;
+            border: 2px solid #000;
+            border-radius: 5px;
+            color: black;
+            padding: 20px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .act-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .act-box p {
+            font-family: "Georgia", serif;
+            margin: 5px 0 0;
+        }
+        
+        .act-box a {
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .act-box a:hover {
+            text-decoration: underline overline;
+            color: #d580ff;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .ribbon {
+                height: 90px;
+                top: 1px;
+            }
+            
+            .act-box {
+                font-size: 1em;
+                padding: 15px;
+            }
+        }
+    </style>
